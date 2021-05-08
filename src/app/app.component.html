@@ -1,0 +1,41 @@
+<main>
+  <div class="p-grid p-col-12">
+    <img [src]="logo" alt="logo" height="100px">
+    <h6>Dashboard Covid Paraná</h6>
+  </div>
+  <div class="p-grid">
+    <div class="p-col-12 p-md-6 p-lg-3">
+      <p-card styleClass="casos">
+        <h4 class="grow">Casos : <i class="fas fa-viruses"></i></h4>
+        <p class="grow">{{dados && dados.cases}}</p>
+      </p-card>
+    </div>
+    <div class="p-col-12 p-md-6 p-lg-3">
+      <p-card styleClass="mortos">
+        <h4 class="grow">Mortos : <i class="fas fa-book-dead"></i></h4>
+        <p class="grow">{{dados && dados.deaths}}</p>
+      </p-card>
+    </div>
+    <div class="p-col-12 p-md-6 p-lg-3">
+      <p-card styleClass="suspeitos">
+        <h4 class="grow">Suspeitos : <i class="fas fa-procedures"></i></h4>
+        <p class="grow">{{dados && dados.suspects}} </p>
+      </p-card>
+    </div>
+    <div class="p-col-12 p-md-6 p-lg-3">
+      <p-card styleClass="recuperados">
+        <h4 class="grow">Recuperados : <i class="fas fa-heart"></i></h4>
+        <p class="grow">{{dados && dados.refuses}}</p>
+      </p-card>
+    </div>
+    <img class="gif" [src]="gif" alt="" margin>
+    <div class="foolder">
+      <a href="https://github.com/RomarioRibeiro/covid-parana/blob/master/src/app/app.component.html">
+        <img class="grow-t" [src]="git" alt="">
+      </a>
+      <img class="acende grow" [src]="unopar" alt="foolder"  width="100px">
+      <h5 class="grow">Desenvilvido por Matheus Pastori</h5>
+    </div>
+
+  </div>
+</main>
